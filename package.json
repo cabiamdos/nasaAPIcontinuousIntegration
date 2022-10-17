@@ -1,0 +1,20 @@
+{
+  "name": "9NASAProjects",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently \"npm run client\" && \"npm run server\" ",
+    "client": "cd client && npm run start",
+    "server": "npm run start --prefix server",
+    "install-server": "npm install --prefix server",
+    "install-client": "npm install --prefix client",
+    "install": "npm run install-server && npm run install-client",
+    "deploy": "npm run build --prefix client && npm run start --prefix server ",
+    "cluster": "npm run cluster"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

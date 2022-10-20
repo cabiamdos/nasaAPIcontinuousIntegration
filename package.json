@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "cd server && npm run test",
+    "test": "npm test --prefix server && npm test --prefix client",
     "start": "concurrently \"npm run client\" && \"npm run server\" ",
     "client": "cd client && npm run start",
     "server": "npm run start --prefix server",
